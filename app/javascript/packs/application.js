@@ -1,4 +1,7 @@
 import 'bootstrap';
+
+import 'hammerjs';
+
 import '../stylesheets/application';
 
 import '@fortawesome/fontawesome-free/js/all';
@@ -14,6 +17,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("src/profile_image_upload");
+require("src/swipe")
+
 // require("jquery")
 // require('bootstrap/dist/js/bootstrap.min.js')
 
