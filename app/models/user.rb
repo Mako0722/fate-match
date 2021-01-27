@@ -29,7 +29,10 @@ class User < ApplicationRecord
 
   validates :self_introduction, length: { maximum: 500 }
 
-  enum gender: { man: 0, woman: 1 }
+  enum gender: { 男性: 0, 女性: 1 }
+
+  mount_uploader :profile_image, ProfileImageUploader
+
 
   def update_without_current_password(params, *options)
 
