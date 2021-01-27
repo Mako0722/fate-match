@@ -25,6 +25,9 @@ gem 'devise'
 gem 'annotate'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'carrierwave', '~> 2.0'
+gem "mini_magick"
+
 
 
 # Use Active Storage variant
