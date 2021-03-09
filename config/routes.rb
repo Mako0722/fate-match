@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users,
-    controllers: { registrations: 'registrations',  sessions: :sessions } 
+  devise_for :users,controllers: {
+    registrations: 'registrations',
+    sessions: :sessions
+  }
+
+   
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root 'top#index'
 
@@ -9,4 +13,6 @@ Rails.application.routes.draw do
   resources :reactions, only: [:create]
 
   resources :matching, only: [:index]
+
+  resources :chat_rooms, only: [:create, :show]
 end
